@@ -8,7 +8,6 @@ public class Main
     {
         int[] multipleResults = new int[11];
         int number;
-        int z;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -17,8 +16,7 @@ public class Main
 
         for (int y = 1; y <= 10; y++)
         {
-            z = number * y;
-            multipleResults[y] = z;
+            multipleResults[y] = number * y;
         }
 
         for (int board : multipleResults)
