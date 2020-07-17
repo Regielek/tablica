@@ -6,7 +6,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int[] multipleResults = new int[10];
+        int[] multipleResults = new int[11];
         int number;
         int z;
 
@@ -18,10 +18,13 @@ public class Main
         for (int y = 1; y <= 10; y++)
         {
             z = number * y;
-            multipleResults[1] = z;
-            System.out.println(multipleResults[1]);
+            multipleResults[y] = z;
         }
 
+        for (int board : multipleResults)
+        {
+            System.out.println(board);
+        }
 
     }
 }
